@@ -84,7 +84,7 @@
           </div>
 	 <div class="is-size-5 publication-authors">
             <b> 
-		    Centara Grand Convention Center
+		    <!-- Centara Grand Convention Center -->
 		   </b>
           </div>
 		 <div class="is-size-5 publication-authors">
@@ -97,7 +97,7 @@
             Zoom link available on <a href="https://llm-vulnerability.github.io/" target="_blank">ACL</a>
           </div> -->
           <div class="is-size-5 publication-authors">
-             All slides in this tutorial are available below.
+             The slide in this tutorial are available below.
           </div>
           <br>
           <!-- <div class="is-size-5 publication-authors">
@@ -120,7 +120,7 @@
             This tutorial focuses on the increasingly important topic of Efficient Inference for LLMs and aims to provide a systematic understanding of key facts and methodologies from a designer’s perspective. We start by introducing the fundamental concepts and mechanisms of modern LLMs, along with the relevant software and hardware. Following this, we formally define the efficiency optimization problem. To equip the audience with a designer’s mindset, we will explain how to diagnose efficiency bottlenecks for a given workload on specific hardware. In particular, we will demonstrate how to use the basic theoretical roofline model and the NVIDIA toolchain to identify these bottlenecks.
           </p>
           <p>
-            With all the tools at our disposal, we will begin with a conceptual analysis of the key factors contributing to inefficiency, namely the autoregressive sampling scheme, model size,and the core attention operator. Next, we will introduce our full-stack taxonomy of efficient inference methods for LLMs. we classify efficient inference methods into algorithm-, modeland system-level ones. (1) Algorithm-level optimization includes efficient decoding methods, input compression methods, as well as alternative generative paradigms beyond the autoregressive model. (2) Model-level optimization designs efficient model structures or cuts down model-level redundancy statically or dynamically. (3) System-level optimization optimizes the inference engine or the serving system without altering the model computation graph. We will walk through each category of methodology, using one to three representative methods as examples for each leaf subcategory, elaborating on the design logic behind each method and which inefficiency factors they primarily address. Finally, we will wrap up with a few demonstrations, a takeaway summary, and future research directions.
+            With the tools at our disposal, we will begin with a conceptual analysis of the key factors contributing to inefficiency, namely the autoregressive sampling scheme, model size,and the core attention operator. Next, we will introduce our full-stack taxonomy of efficient inference methods for LLMs. we classify efficient inference methods into algorithm-, modeland system-level ones. (1) Algorithm-level optimization includes efficient decoding methods, input compression methods, as well as alternative generative paradigms beyond the autoregressive model. (2) Model-level optimization designs efficient model structures or cuts down model-level redundancy statically or dynamically. (3) System-level optimization optimizes the inference engine or the serving system without altering the model computation graph. We will walk through each category of methodology, using one to three representative methods as examples for each leaf subcategory, elaborating on the design logic behind each method and which inefficiency factors they primarily address. Finally, we will wrap up with a few demonstrations, a takeaway summary, and future research directions.
           </p>
         </div>
       </div>
@@ -165,46 +165,46 @@
           </thead>
           <tbody>
             <tr>
-              <td class="tg-0lax">9:00—9:40</td>
-              <td class="tg-0lax">Part I: Introduction and Preliminaries<a href="https://llm-vulnerability.github.io/slides/1-intro.pdf" target="_blank">[Slides]</a></td>
+              <td class="tg-0lax">9:00—9:45 (45min) </td>
+              <td class="tg-0lax">Part I: Background, Preliminary, Problem Definition and Analysis, Practical Pipeline</td>
               <td class="tg-0lax">Ning, Xuefei</td>
 	      <td class="tg-0lax"></td>
             </tr>
             <tr>
-              <td class="tg-0lax">9:40—10:20</td>
-              <td class="tg-0lax">Part II: Model-based Methods <a href="https://llm-vulnerability.github.io/slides/2-hacker.pdf" target="_blank">[Slides]</a></td>
+              <td class="tg-0lax">9:45—10:25 (40min) </td>
+              <td class="tg-0lax">Part II: Model-Level Optimization</td>
               <td class="tg-0lax">Hou, Lu</td>
         <td class="tg-0lax"></td>
             </tr>       
             <tr>
-              <td class="tg-0lax">10:30—11:00</td>
+              <td class="tg-0lax">10:25—10:35 (10min) </td>
               <td class="tg-0lax">QA Session 1</td>
               <td class="tg-0lax"></td>
 
         <td class="tg-0lax"></td>
             </tr>       
             <tr>
-              <td class="tg-0lax">10:30—11:00</td>
-              <td class="tg-0lax">Coffee break</td>
+              <td class="tg-0lax">10:35—11:05 (30min) </td>
+              <td class="tg-0lax">Coffee Break</td>
               <td class="tg-0lax"></td>
 
 	      <td class="tg-0lax"></td>
             </tr>
             <tr>
-              <td class="tg-0lax">9:30—9:55</td>
-              <td class="tg-0lax">Part III: System-level Methods  <a href="https://llm-vulnerability.github.io/slides/3-llm-attack.pdf" target="_blank">[Slides]</a></td>
+              <td class="tg-0lax">11:05—11:50 (45min) </td>
+              <td class="tg-0lax">Part III: System-Level Methods</td>
               <td class="tg-0lax">Dai, Guohao</td>
             </tr>
       
             <tr>
-              <td class="tg-0lax">9:55—10:25</td>
-              <td class="tg-0lax">Part IV: Algorithm-level Methods <a href="https://llm-vulnerability.github.io/slides/4-vlm-attack.pdf" target="_blank">[Slides]</a></td>
+              <td class="tg-0lax">11:50—12:20 (30min) </td>
+              <td class="tg-0lax">Part IV: Algorithm-Level Methods</td>
               <td class="tg-0lax">BAI, Haoli</td>
 		  
         <td class="tg-0lax"></td>
             </tr>       
             <tr>
-              <td class="tg-0lax">10:30—11:00</td>
+              <td class="tg-0lax">12:20—12:30 (10min) </td>
               <td class="tg-0lax">QA Session 2</td>
               <td class="tg-0lax"></td>  
 
@@ -219,32 +219,44 @@
         <h2 class="title is-3">Reading List</h2>
 
      
-        <p> The full list of papers can be found in our recent survey: <a href="https://arxiv.org/pdf/2404.14294?">A Survey on Efficient Inference for Large Language Models</a>, below we highlight a small subset of the papers where <b>bold papers</b> will be discussed in detail during our tutorial.  </p>
+        <!-- <p> The full list of papers can be found in our recent survey: <a href="https://arxiv.org/pdf/2404.14294?">A Survey on Efficient Inference for Large Language Models</a>, below we highlight a small subset of the papers where <b>bold papers</b> will be discussed in detail during our tutorial.  </p> -->
+          <p> A more comprehensive list of papers are listed in our survey (<a href="https://arxiv.org/pdf/2404.14294">A Survey on Efficient Inference for Large Language Models</a>), below we list the papers that are referenced or discussed in our tutorial.  </p> 
 
         <br>
-          <h3 class="title is-5">Prerequisites</h3>
+          <h3 class="title is-5">Preliminary</h3>
          <ul>
-            <li><a href="https://arxiv.org/abs/1706.03762">Attention is all you need</a>, Vaswani et al., 2017.</li>
+            <li><a href="https://arxiv.org/abs/1706.03762">Attention is all you need</a> (Vaswani et al., 2017)</li>
+            <li><a href="https://arxiv.org/pdf/2505.09598">How Hungry is AI? Benchmarking Energy, Water, and Carbon Footprint of LLM Inference</a> (Jegham et al., 2025)</li>
+            <li><a href="https://en.wikipedia.org/wiki/Instruction_set_architecture">Instruction Set Architecture</a> (Wikipedia)</li>
+            <li><a href="https://www.cs.utexas.edu/~rossbach/cs380p/papers/cuda-programming.pdf">Professional CUDA C Programming</a> (Cheng et al., 2014)</li>
          </ul>
         
         <br>
         
-          <h3 class="title is-5">Part II: Model-based Methods </h3>
+          <h3 class="title is-5">Part II: Model-Level Optimization </h3>
         <ul>
-
-	  <li><a href="https://arxiv.org/abs/1611.02770">Delving into Transferable Adversarial Examples and Black-box Attacks</a> (Liu et al., 2016)</li>
+	        <li><a href="https://arxiv.org/abs/1611.02770">Delving into Transferable Adversarial Examples and Black-box Attacks</a> (Liu et al., 2016)</li>
           <li><a href="https://arxiv.org/abs/1712.06751">HotFlip: White-Box Adversarial Examples for Text Classification</a> (Ebrahimi et al., 2017)</li>
           <li><a href="https://openaccess.thecvf.com/content_cvpr_2017_workshops/w16/papers/Kasiviswanathan_Simple_Black-Box_Adversarial_CVPR_2017_paper.pdf">Simple Black-Box Adversarial Attacks on Deep Neural Networks</a> (Narodytska et al., 2017)</li>
-	  <li><a href="https://ieeexplore.ieee.org/abstract/document/8424632">Black-Box Generation of Adversarial Text Sequences to Evade Deep Learning Classifiers</a> (Gao et al., 2018)</li>
-	  <li><a href="https://ieeexplore.ieee.org/abstract/document/9002856">Sensitivity of Adversarial Perturbation in Fast Gradient Sign Method</a> (Liu et al., 2019)</li>
-	  <li><a href="https://ojs.aaai.org/index.php/AAAI/article/view/6311">Is BERT Really Robust? A Strong Baseline for Natural Language Attack on Text Classification and Entailment</a> (Jin et al., 2020)</li>			
+	        <li><a href="https://ieeexplore.ieee.org/abstract/document/8424632">Black-Box Generation of Adversarial Text Sequences to Evade Deep Learning Classifiers</a> (Gao et al., 2018)</li>
+	        <li><a href="https://ieeexplore.ieee.org/abstract/document/9002856">Sensitivity of Adversarial Perturbation in Fast Gradient Sign Method</a> (Liu et al., 2019)</li>
+	        <li><a href="https://ojs.aaai.org/index.php/AAAI/article/view/6311">Is BERT Really Robust? A Strong Baseline for Natural Language Attack on Text Classification and Entailment</a> (Jin et al., 2020)</li>			
           <li><a href="https://arxiv.org/abs/2307.10719">LLM Censorship: A Machine Learning Challenge or a Computer Security Problem?</a> (Glukhov et al., 2023)</li>
           <li><a href="https://arxiv.org/abs/2308.14840">Identifying and Mitigating the Security Risks of Generative AI</a> (Barrett et al., 2023)</li>
           <li><a href="https://arxiv.org/abs/2203.02155">Training language models to follow instructions with human feedback</a> (Ouyang et al., 2023)</li>
-         
-		
         </ul>
         
+        <br>
+
+        <h3 class="title is-5">Part III: System-Level Optimization </h3>
+        <ul>
+        </ul>
+        
+        <br>
+
+        <h3 class="title is-5">Part III: Algorithm-Level Optimization </h3>
+        <ul>
+        </ul>
 
       </div>
 
